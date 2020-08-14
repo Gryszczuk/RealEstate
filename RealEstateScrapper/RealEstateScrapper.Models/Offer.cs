@@ -11,7 +11,7 @@ namespace RealEstateScrapper.Models
         public string Description { get; set; }
         public string Image { get; set; }
         public string Link { get; set; }
-        public string City { get; set; }
+        public City City { get; set; }
         public string Portal { get; set; }
     }
 }
