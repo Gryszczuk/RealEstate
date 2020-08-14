@@ -2,15 +2,16 @@
 using System;
 using System.Collections.Generic;
 using System.Text;
+using System.Threading.Tasks;
 
 namespace RealEstateScrapper.Services.Interfaces
 {
     public interface IRepository<T> where T : BaseModel
     {
-        T GetById(Guid id);
-        void Add(T model);
-        void AddMany(IEnumerable<T> models);
-        void Delete(T model);
-        void Update(T model);
+        Task<T> GetById(Guid id);
+        Task Add(T model);
+        Task AddMany(IEnumerable<T> models);
+        Task Delete(T model);
+        Task Update(T model);
     }
 }

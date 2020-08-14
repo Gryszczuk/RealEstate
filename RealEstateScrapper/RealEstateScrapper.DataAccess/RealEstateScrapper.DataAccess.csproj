@@ -10,6 +10,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\RealEstateScrapper.Models\RealEstateScrapper.Models.csproj" />
+    <ProjectReference Include="..\RealEstateScrapper.Services\RealEstateScrapper.Services.csproj" />
   </ItemGroup>
 
 </Project>
