@@ -14,5 +14,7 @@ namespace RealEstateScrapper.DataAccess
         {
         }
         public DbSet<Offer> Offers { get; set; }
+        public DbSet<City> Cities { get; set; }
+
     }
 }
