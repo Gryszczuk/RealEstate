@@ -6,7 +6,7 @@ namespace RealEstateScrapper.Models
 {
    public class BaseModel
     {
-        public string Id { get; set; }
+        public Guid Id { get; set; }
         public bool IsActive { get; set; }
     }
 }
