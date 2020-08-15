@@ -23,7 +23,7 @@ namespace RealEstateScrapper.Offers
             return Ok(result);
         }
         [HttpGet("offers/{city}")]
-        public async Task<IActionResult> GetOffersForCity(string city)
+        public async Task<IActionResult> GetOffersForCity(string city, int? page = null, int pageSize = 10)
         {
             var result = await _mediator.Send(new GetOffersInCityQuery(city));
             return Ok(result);
