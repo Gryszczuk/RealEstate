@@ -4,7 +4,12 @@ using System.Text;
 
 namespace RealEstateScrapper.Services.Offers.GetOffersInCity
 {
-    class GetOffersInCityQuery
+   public class GetOffersInCityQuery
     {
+        public GetOffersInCityQuery(string city)
+        {
+            City = city;
+        }
+        public string City { get; set; }
     }
 }

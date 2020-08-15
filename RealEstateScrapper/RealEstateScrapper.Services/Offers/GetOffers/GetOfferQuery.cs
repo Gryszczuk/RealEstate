@@ -1,10 +1,15 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using MediatR;
+using RealEstateScrapper.Models.Dto;
+using System;
 
 namespace RealEstateScrapper.Services.Offers.GetOffers
 {
-    public class GetOfferQuery
+    public class GetOfferQuery : IRequest<Result<OfferDto>>
     {
+        public GetOfferQuery(Guid id)
+        {
+            Id = id;
+        }
+        public Guid Id { get; set; }
     }
 }
