@@ -6,7 +6,6 @@
 
   <ItemGroup>
     <Folder Include="Offers\Commands\" />
-    <Folder Include="Offers\Handlers\" />
     <Folder Include="Offers\Controllers\" />
   </ItemGroup>
 
@@ -19,6 +18,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\RealEstateScrapper.Models\RealEstateScrapper.Models.csproj" />
+    <ProjectReference Include="..\RealEstateScrapper.Services\RealEstateScrapper.Services.csproj" />
   </ItemGroup>
 
 

@@ -16,10 +16,10 @@ namespace RealEstateScrapper.Offers
             _mediator = mediator;
         }
 
-        [HttpPost("/offers/{id}")]
-        public async Task<IActionResult> Get([FromBody] GetOfferQuery query)
+        [HttpGet("/offers/{id}")]
+        public async Task<IActionResult> Get(Guid id)
         {
-            var result = await _mediator.Send(query);
+            var result = await _mediator.Send(new GetOfferQuery(id));
             return Ok(result);
         }
     }
