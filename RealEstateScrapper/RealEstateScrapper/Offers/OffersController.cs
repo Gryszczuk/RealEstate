@@ -2,7 +2,6 @@
 using Microsoft.AspNetCore.Mvc;
 using RealEstateScrapper.Services.Helpers;
 using RealEstateScrapper.Services.Offers.GetOffers;
-using RealEstateScrapper.Services.Offers.GetOffersInCity;
 using System;
 using System.Threading.Tasks;
 
