@@ -5,11 +5,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Offers\Commands\" />
-    <Folder Include="Offers\Controllers\" />
-  </ItemGroup>
-
-  <ItemGroup>
     <PackageReference Include="MediatR" Version="8.1.0" />
     <PackageReference Include="MediatR.Extensions.Microsoft.DependencyInjection" Version="8.1.0" />
     <PackageReference Include="Microsoft.AspNet.WebApi.Core" Version="5.2.7" />
@@ -19,6 +14,11 @@
   <ItemGroup>
     <ProjectReference Include="..\RealEstateScrapper.Models\RealEstateScrapper.Models.csproj" />
     <ProjectReference Include="..\RealEstateScrapper.Services\RealEstateScrapper.Services.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Offers\Controllers\" />
+    <Folder Include="Offers\Requests\" />
   </ItemGroup>
 
 
