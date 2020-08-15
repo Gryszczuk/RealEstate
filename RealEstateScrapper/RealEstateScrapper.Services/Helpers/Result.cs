@@ -1,6 +1,8 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
+using System.Text;
 
-namespace RealEstateScrapper.Services
+namespace RealEstateScrapper.Services.Helpers
 {
     public class Result
     {

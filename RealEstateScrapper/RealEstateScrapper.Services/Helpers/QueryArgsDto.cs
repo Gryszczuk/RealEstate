@@ -1,10 +1,9 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+using System.Text;
 
-namespace RealEstateScrapper.Helpers
+namespace RealEstateScrapper.Services.Helpers
 {
     public class QueryArgsDto
     {
