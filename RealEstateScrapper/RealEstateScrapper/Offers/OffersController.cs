@@ -1,6 +1,7 @@
 ﻿using MediatR;
 using Microsoft.AspNetCore.Mvc;
 using RealEstateScrapper.Services.Helpers;
+using RealEstateScrapper.Services.Offers.GetOfferDetails;
 using RealEstateScrapper.Services.Offers.GetOffers;
 using System;
 using System.Threading.Tasks;

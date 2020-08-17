@@ -2,10 +2,8 @@
 using RealEstateScrapper.Models.Dto;
 using RealEstateScrapper.Services.Helpers;
 using System;
-using System.Collections.Generic;
-using System.Text;
 
-namespace RealEstateScrapper.Services.Offers.GetOffers
+namespace RealEstateScrapper.Services.Offers.GetOfferDetails
 {
     public class GetOfferDetailsQuery : IRequest<Result<OfferDto>>
     {

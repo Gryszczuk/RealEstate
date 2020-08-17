@@ -1,7 +1,6 @@
 ﻿using MediatR;
 using RealEstateScrapper.Models.Dto;
 using RealEstateScrapper.Services.Helpers;
-using System;
 using System.Collections.Generic;
 
 namespace RealEstateScrapper.Services.Offers.GetOffers
