@@ -1,6 +1,8 @@
-﻿using System;
+﻿using Microsoft.EntityFrameworkCore;
+using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Threading.Tasks;
 
 namespace RealEstateScrapper.Models.Helpers
 {
@@ -53,12 +55,12 @@ namespace RealEstateScrapper.Models.Helpers
             AddRange(items);
         }
 
-        public static PagedList<T> Create(IEnumerable<T> source, int pageNumber, int pageSize)
+        public static async Task<PagedList<T>> Create(IQueryable<T> source, int pageNumber, int pageSize)
         {
             var count = source.Count();
-            var items = source.Skip((pageNumber - 1) * pageSize)
+            var items = await source.Skip((pageNumber - 1) * pageSize)
                 .Take(pageSize)
-                .ToList();
+                .ToListAsync();
 
             return new PagedList<T>(items, count, pageNumber, pageSize);
         }

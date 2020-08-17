@@ -1,5 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using RealEstateScrapper.Models;
+using RealEstateScrapper.Models.Helpers;
 using RealEstateScrapper.Services.Repositories;
 using System;
 using System.Collections.Generic;
@@ -13,9 +14,22 @@ namespace RealEstateScrapper.DataAccess.Repositories
     {
         private readonly RealEstateContext _context;
         public OfferRepository(RealEstateContext context) : base(context) { }
-        public async Task<IEnumerable<Offer>> GetOffersInCity(City city)
+        public async Task<PagedList<Offer>> GetOffers(City city, QueryArgs query)
         {
-            var offers = await _context.Offers.Where(o => o.City == city).ToListAsync();
+            var offers = await _context.Offers.Where(offer => offer.City == city
+            && offer.Price >= query.MinPrice
+            && offer.Price <= query.MaxPrice
+            && offer.IsActive)
+                .GetPaged(query.Page, query.PageSize);
+            return offers;
+        }
+        public async Task<PagedList<Offer>> GetOffers(QueryArgs query)
+        {
+            var offers = await _context.Offers.Where(offer => offer.Price >= query.MinPrice
+           && offer.Price <= query.MaxPrice
+           && offer.IsActive)
+             .GetPaged(query.Page, query.PageSize);
+
             return offers;
         }
     }

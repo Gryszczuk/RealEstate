@@ -1,5 +1,6 @@
 ﻿using MediatR;
 using Microsoft.AspNetCore.Mvc;
+using RealEstateScrapper.Models.Helpers;
 using RealEstateScrapper.Services.Helpers;
 using RealEstateScrapper.Services.Offers.GetOfferDetails;
 using RealEstateScrapper.Services.Offers.GetOffers;
@@ -18,7 +19,7 @@ namespace RealEstateScrapper.Offers
         }
 
         [HttpGet("/offers")]
-        public async Task<IActionResult> Get([FromQuery] QueryArgsDto query)
+        public async Task<IActionResult> Get([FromQuery] QueryArgs query)
         {
             var result = await _mediator.Send(new GetOffersQuery(query));
             return result.Process();
@@ -33,7 +34,7 @@ namespace RealEstateScrapper.Offers
 
 
         [HttpGet("offers/{city}")]
-        public async Task<IActionResult> GetOffersForCity(string city,[FromQuery] QueryArgsDto query)
+        public async Task<IActionResult> GetOffersForCity(string city,[FromQuery] QueryArgs query)
         {
             var result = await _mediator.Send(new GetOffersQuery(query, city));
             return result.Process();

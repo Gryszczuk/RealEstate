@@ -1,14 +1,12 @@
 ﻿using RealEstateScrapper.Models;
+using RealEstateScrapper.Models.Helpers;
 using RealEstateScrapper.Services.Interfaces;
-using System;
-using System.Collections.Generic;
-using System.Text;
 using System.Threading.Tasks;
 
 namespace RealEstateScrapper.Services.Repositories
 {
     public interface IOfferRepository : IRepository<Offer>
     {
-        Task<IEnumerable<Offer>> GetOffersInCity(City city);
+        Task<PagedList<Offer>> GetOffers(City city, QueryArgs args);
     }
 }
