@@ -20,14 +20,14 @@ namespace RealEstateScrapper.Offers
         public async Task<IActionResult> Get([FromQuery] QueryArgsDto query)
         {
             var result = await _mediator.Send(new GetOffersQuery(query));
-            return Ok(result);
+            return result.Process();
         }
 
         [HttpGet("/offers/{id}")]
         public async Task<IActionResult> Get(Guid id)
         {
-            var result = await _mediator.Send(new GetOffersQuery(id));
-            return Ok(result);
+            var result = await _mediator.Send(new GetOfferDetailsQuery(id));
+            return result.Process();
         }
 
 
@@ -35,7 +35,7 @@ namespace RealEstateScrapper.Offers
         public async Task<IActionResult> GetOffersForCity(string city,[FromQuery] QueryArgsDto query)
         {
             var result = await _mediator.Send(new GetOffersQuery(query, city));
-            return Ok(result);
+            return result.Process();
         }
     }
 }

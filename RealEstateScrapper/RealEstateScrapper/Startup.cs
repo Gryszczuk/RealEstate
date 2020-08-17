@@ -1,3 +1,6 @@
+using Autofac;
+using AutoMapper;
+using MediatR;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.EntityFrameworkCore;
@@ -5,6 +8,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using RealEstateScrapper.DataAccess;
+using System;
 
 namespace RealEstateScrapper
 {
@@ -17,10 +21,15 @@ namespace RealEstateScrapper
 
         public IConfiguration Configuration { get; }
 
+        public ILifetimeScope AutofacContainer { get; private set; }
+
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers();
+
+            services.AddMediatR(AppDomain.CurrentDomain.GetAssemblies());
+            services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
 
             services.AddDbContext<RealEstateContext>(options =>
                 options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
