@@ -8,5 +8,9 @@ namespace RealEstateScrapper.Services.Crawling.Scrappers
 {
     public class IScrapperOlx : IScrapper<OlxTargetWebsite>
     {
+        public int GetPagesCount()
+        {
+            throw new NotImplementedException();
+        }
     }
 }

@@ -7,6 +7,6 @@ namespace RealEstateScrapper.Services.Interfaces
 {
     public interface IUrlGenerator<T> where T : ITargetWebsite
     {
-        public string GenerateUrl(City city);
+        public string GeneratePageUrl(City city, int pageNumber);
     }
 }

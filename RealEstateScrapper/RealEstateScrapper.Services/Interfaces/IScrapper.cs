@@ -6,5 +6,6 @@ namespace RealEstateScrapper.Services.Interfaces
 {
     public interface IScrapper<T> where T : ITargetWebsite
     {
+        public int GetPagesCount();
     }
 }
