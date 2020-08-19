@@ -8,7 +8,8 @@ namespace RealEstateScrapper.Services.Crawling.UrlGenerators
     {
         public string GeneratePageUrl(City city, int pageNumber)
         {
-           return  $"https://www.olx.pl/nieruchomosci/mieszkania/sprzedaz/olsztyn/?page={pageNumber}";
+            var url = string.Format("https://www.olx.pl/nieruchomosci/mieszkania/sprzedaz/{0}/?page={1}", city.Name, pageNumber);
+            return url;
         }
     }
 }

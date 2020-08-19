@@ -209,6 +209,10 @@
               "target": "Package",
               "version": "[9.1.2, )"
             },
+            "HtmlAgilityPack": {
+              "target": "Package",
+              "version": "[1.11.24, )"
+            },
             "MediatR": {
               "target": "Package",
               "version": "[8.1.0, )"
