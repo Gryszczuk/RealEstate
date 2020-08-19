@@ -16,4 +16,8 @@
     <ProjectReference Include="..\RealEstateScrapper.Models\RealEstateScrapper.Models.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Crawling\UrlGenerators\" />
+  </ItemGroup>
+
 </Project>
