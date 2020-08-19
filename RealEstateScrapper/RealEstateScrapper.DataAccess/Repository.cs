@@ -9,7 +9,7 @@ namespace RealEstateScrapper.DataAccess
 {
     public class Repository<T> : IRepository<T> where T : BaseModel
     {
-        private readonly RealEstateContext _context;
+        protected readonly RealEstateContext _context;
         private DbSet<T> entites;
         public Repository(RealEstateContext context)
         {

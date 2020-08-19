@@ -7,7 +7,6 @@ namespace RealEstateScrapper.DataAccess.Repositories
 {
     public class CityRepository : Repository<City>, ICityRepository
     {
-        private readonly RealEstateContext _context;
         public CityRepository(RealEstateContext context) : base(context) { }
         public async Task<City> GetCityDetails(string cityName)
         {

@@ -8,10 +8,14 @@ namespace RealEstateScrapper.Models.Helpers
 {
     public class PagedList<T> : List<T>
     {
+        public PagedList()
+        {
+
+        }
         public int CurrentPage { get; private set; }
         public int TotalPages { get; private set; }
         public int PageSize { get; private set; }
-        public int TotalCount { get; private set; }
+        public int TotalRecords { get; private set; }
 
         public bool HasPrevious
         {
@@ -41,7 +45,7 @@ namespace RealEstateScrapper.Models.Helpers
         }
         private PagedList(List<T> items, int count, int pageNumber, int pageSize)
         {
-            TotalCount = count;
+            TotalRecords = count;
             if (pageSize <= 0)
             {
                 PageSize = 10;
@@ -54,15 +58,9 @@ namespace RealEstateScrapper.Models.Helpers
             TotalPages = (int)Math.Ceiling(count / (double)pageSize);
             AddRange(items);
         }
-
-        public static async Task<PagedList<T>> Create(IQueryable<T> source, int pageNumber, int pageSize)
+        public static PagedList<T> Create(List<T> source, int currentPage, int pageSize, int totalCount)
         {
-            var count = source.Count();
-            var items = await source.Skip((pageNumber - 1) * pageSize)
-                .Take(pageSize)
-                .ToListAsync();
-
-            return new PagedList<T>(items, count, pageNumber, pageSize);
-        }
+            return new PagedList<T>(source, totalCount, currentPage, pageSize);
+        } 
     }
 }

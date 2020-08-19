@@ -54,5 +54,10 @@ namespace RealEstateScrapper
                 endpoints.MapControllers();
             });
         }
+
+        public void ConfigureContainer(ContainerBuilder builder)
+        {
+            builder.RegisterAssemblyModules(AppDomain.CurrentDomain.GetAssemblies());
+        }
     }
 }

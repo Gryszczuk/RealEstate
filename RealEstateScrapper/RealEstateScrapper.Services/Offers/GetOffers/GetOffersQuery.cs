@@ -6,7 +6,7 @@ using System.Collections.Generic;
 
 namespace RealEstateScrapper.Services.Offers.GetOffers
 {
-    public class GetOffersQuery : IRequest<Result<List<OfferDto>>>
+    public class GetOffersQuery : IRequest<Result<PagedList<OfferDto>>>
     {
         public GetOffersQuery(QueryArgs paging, string city = null)
         {

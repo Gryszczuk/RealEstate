@@ -2,7 +2,9 @@
 using MediatR;
 using RealEstateScrapper.Models;
 using RealEstateScrapper.Models.Dto;
+using RealEstateScrapper.Models.Helpers;
 using RealEstateScrapper.Services.Helpers;
+using RealEstateScrapper.Services.Repositories;
 using System;
 using System.Collections.Generic;
 using System.Threading;
@@ -10,25 +12,21 @@ using System.Threading.Tasks;
 
 namespace RealEstateScrapper.Services.Offers.GetOffers
 {
-    public class GetOffersHandler : IRequestHandler<GetOffersQuery, Result<List<OfferDto>>>
+    public class GetOffersHandler : IRequestHandler<GetOffersQuery, Result<PagedList<OfferDto>>>
     {
         protected IMapper _mapper;
-        public GetOffersHandler(IMapper mapper)
+        protected IOfferRepository _repository;
+        public GetOffersHandler(IMapper mapper,
+            IOfferRepository repository)
         {
             _mapper = mapper;
+            _repository = repository;
         }
-        public async Task<Result<List<OfferDto>>> Handle(GetOffersQuery request, CancellationToken cancellationToken)
+        public async Task<Result<PagedList<OfferDto>>> Handle(GetOffersQuery request, CancellationToken cancellationToken)
         {
-            
-            var offer = new Offer
-            {
-                Id = new Guid(),
-                Name = "testing name"
-            };
-            var offerDto = _mapper.Map<OfferDto>(offer);
-            List <OfferDto> list = new List<OfferDto>();
-            list.Add(offerDto);
-            return Result.Ok(list);
+            var result = await _repository.GetOffers(request.Paging);
+            var mappedResult = _mapper.Map<PagedList<OfferDto>>(result);
+            return Result.Ok(mappedResult);
         }
     }
 }
