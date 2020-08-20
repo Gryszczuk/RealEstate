@@ -37,11 +37,6 @@ namespace RealEstateScrapper.DataAccess
         {
            return await entites.FirstOrDefaultAsync(s => s.Id == id);
         }
-        public async Task AddRange(List<T> models)
-        {
-            await _context.AddRangeAsync(models);
-        }
-
         public async Task Update(T model)
         {
             await _context.SaveChangesAsync();
