@@ -9,6 +9,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using RealEstateScrapper.DataAccess;
+using RealEstateScrapper.Hangfire;
 using System;
 
 namespace RealEstateScrapper
@@ -59,8 +60,9 @@ namespace RealEstateScrapper
             {
                 endpoints.MapControllers();
             });
-
-            app.UseHangfireDashboard();
+            app.UseHangfireDashboard("/hangfire");
+            app.UseHangfireServer();
+            RecurringJob.AddOrUpdate<HangfireUpdateDatabase>(x => x.Update(), Cron.Hourly);
         }
 
         public void ConfigureContainer(ContainerBuilder builder)

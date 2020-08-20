@@ -2621,6 +2621,25 @@
           "Microsoft.AspNetCore.App"
         ]
       },
+      "RealEstateScrapper.Hangfire/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "dependencies": {
+          "Hangfire.Core": "1.7.12",
+          "Hangfire.SqlServer": "1.7.12",
+          "RealEstateScrapper.DataAccess": "1.0.0",
+          "RealEstateScrapper.Services": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/RealEstateScrapper.Hangfire.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/RealEstateScrapper.Hangfire.dll": {}
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
+      },
       "RealEstateScrapper.Models/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v3.1",
@@ -8489,6 +8508,11 @@
       "path": "../RealEstateScrapper.DataAccess/RealEstateScrapper.DataAccess.csproj",
       "msbuildProject": "../RealEstateScrapper.DataAccess/RealEstateScrapper.DataAccess.csproj"
     },
+    "RealEstateScrapper.Hangfire/1.0.0": {
+      "type": "project",
+      "path": "../RealEstateScrapper.Hangfire/RealEstateScrapper.Hangfire.csproj",
+      "msbuildProject": "../RealEstateScrapper.Hangfire/RealEstateScrapper.Hangfire.csproj"
+    },
     "RealEstateScrapper.Models/1.0.0": {
       "type": "project",
       "path": "../RealEstateScrapper.Models/RealEstateScrapper.Models.csproj",
@@ -8515,6 +8539,7 @@
       "Microsoft.EntityFrameworkCore.Design >= 3.1.7",
       "Microsoft.EntityFrameworkCore.SqlServer >= 3.1.7",
       "RealEstateScrapper.DataAccess >= 1.0.0",
+      "RealEstateScrapper.Hangfire >= 1.0.0",
       "RealEstateScrapper.Models >= 1.0.0",
       "RealEstateScrapper.Services >= 1.0.0"
     ]
@@ -8551,6 +8576,9 @@
           "projectReferences": {
             "C:\\Users\\grysz\\Desktop\\RealEstate\\RealEstateScrapper\\RealEstateScrapper.DataAccess\\RealEstateScrapper.DataAccess.csproj": {
               "projectPath": "C:\\Users\\grysz\\Desktop\\RealEstate\\RealEstateScrapper\\RealEstateScrapper.DataAccess\\RealEstateScrapper.DataAccess.csproj"
+            },
+            "C:\\Users\\grysz\\Desktop\\RealEstate\\RealEstateScrapper\\RealEstateScrapper.Hangfire\\RealEstateScrapper.Hangfire.csproj": {
+              "projectPath": "C:\\Users\\grysz\\Desktop\\RealEstate\\RealEstateScrapper\\RealEstateScrapper.Hangfire\\RealEstateScrapper.Hangfire.csproj"
             },
             "C:\\Users\\grysz\\Desktop\\RealEstate\\RealEstateScrapper\\RealEstateScrapper.Models\\RealEstateScrapper.Models.csproj": {
               "projectPath": "C:\\Users\\grysz\\Desktop\\RealEstate\\RealEstateScrapper\\RealEstateScrapper.Models\\RealEstateScrapper.Models.csproj"

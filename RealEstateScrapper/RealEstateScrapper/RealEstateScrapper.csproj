@@ -24,6 +24,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\RealEstateScrapper.DataAccess\RealEstateScrapper.DataAccess.csproj" />
+    <ProjectReference Include="..\RealEstateScrapper.Hangfire\RealEstateScrapper.Hangfire.csproj" />
     <ProjectReference Include="..\RealEstateScrapper.Models\RealEstateScrapper.Models.csproj" />
     <ProjectReference Include="..\RealEstateScrapper.Services\RealEstateScrapper.Services.csproj" />
   </ItemGroup>

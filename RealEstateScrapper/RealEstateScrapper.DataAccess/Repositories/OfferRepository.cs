@@ -13,6 +13,7 @@ namespace RealEstateScrapper.DataAccess.Repositories
     public class OfferRepository : Repository<Offer>, IOfferRepository
     {
         public OfferRepository(RealEstateContext context) : base(context) { }
+
         public async Task<PagedList<Offer>> GetOffers(City city, QueryArgs query)
         {
             var offersQuery = _context.Offers.Where(offer => offer.Price >= query.MinPrice
@@ -38,6 +39,16 @@ namespace RealEstateScrapper.DataAccess.Repositories
             var totalCount = offers.Count;
             var temp = PagedList<Offer>.Create(offers, query.Page, query.PageSize, totalCount);
             return temp;
+        }
+
+        public async Task<int> GetOffersCountForCity(City city)
+        {
+            return await _context.Offers.Where(x => x.City == city).CountAsync();
+        }
+        public async Task<decimal> GetAveragePriceForCity(City city)
+        {
+            return await _context.Offers.Where(x => x.City == city)
+                .Select(x => x.Price).AverageAsync();
         }
     }
 }
