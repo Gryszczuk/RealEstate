@@ -13,5 +13,6 @@ namespace RealEstateScrapper.Services.Interfaces
         Task AddMany(IEnumerable<T> models);
         Task Delete(T model);
         Task Update(T model);
+        Task<IEnumerable<T>> GetAll();
     }
 }

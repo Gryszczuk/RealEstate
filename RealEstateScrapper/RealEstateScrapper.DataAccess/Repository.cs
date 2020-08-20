@@ -3,6 +3,8 @@ using RealEstateScrapper.Models;
 using RealEstateScrapper.Services.Interfaces;
 using System;
 using System.Collections.Generic;
+using System.Linq;
+using System.Security.Cryptography.X509Certificates;
 using System.Threading.Tasks;
 
 namespace RealEstateScrapper.DataAccess
@@ -41,6 +43,9 @@ namespace RealEstateScrapper.DataAccess
         {
             await _context.SaveChangesAsync();
         }
-        
+        public async Task<IEnumerable<T>> GetAll()
+        {
+            return await entites.Where(x => x.IsActive).ToListAsync();
+        }
     }
 }

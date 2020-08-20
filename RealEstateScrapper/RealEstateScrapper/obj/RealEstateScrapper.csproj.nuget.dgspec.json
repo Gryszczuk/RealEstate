@@ -303,6 +303,18 @@
               "target": "Package",
               "version": "[6.0.0, )"
             },
+            "Hangfire.AspNetCore": {
+              "target": "Package",
+              "version": "[1.7.12, )"
+            },
+            "Hangfire.Core": {
+              "target": "Package",
+              "version": "[1.7.12, )"
+            },
+            "Hangfire.SqlServer": {
+              "target": "Package",
+              "version": "[1.7.12, )"
+            },
             "MediatR": {
               "target": "Package",
               "version": "[8.1.0, )"

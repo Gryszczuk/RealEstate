@@ -1,5 +1,6 @@
 using Autofac;
 using AutoMapper;
+using Hangfire;
 using MediatR;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -33,6 +34,11 @@ namespace RealEstateScrapper
 
             services.AddDbContext<RealEstateContext>(options =>
                 options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
+            services.AddHangfire(config =>
+                            config.SetDataCompatibilityLevel(CompatibilityLevel.Version_170)
+                            .UseSimpleAssemblyNameTypeSerializer()
+                            .UseDefaultTypeSerializer()
+                            .UseSqlServerStorage(Configuration.GetConnectionString("DefaultConnection")));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -53,6 +59,8 @@ namespace RealEstateScrapper
             {
                 endpoints.MapControllers();
             });
+
+            app.UseHangfireDashboard();
         }
 
         public void ConfigureContainer(ContainerBuilder builder)

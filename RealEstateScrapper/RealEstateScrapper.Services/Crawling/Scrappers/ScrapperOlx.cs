@@ -11,33 +11,12 @@ using System.Threading.Tasks;
 
 namespace RealEstateScrapper.Services.Crawling.Scrappers
 {
-    public class ScrapperOlx : BaseScrapper<OlxTargetWebsite>, IScrappingService
+    public class ScrapperOlx : BaseScrapper<OlxTargetWebsite>
     {
         public ScrapperOlx(IUrlGenerator<OlxTargetWebsite> urlGenerator,
             IOfferRepository repository) : base(urlGenerator, repository) { }
        
-        public async Task CollectData(City city)
-        {
-            for (int i = 0; i < GetPagesCount(); i++)
-            {
-                var url = _urlGenerator.GeneratePageUrl(city, i);
-                var htmlDoc = await HtmlClient.LoadFromWebAsync(url);
-                var nodes = htmlDoc.DocumentNode
-                   .SelectNodes("//table[@id='offers_table']/tbody/tr[@class='wrap']/td").ToList();
-               
-                var offers = GetDetails(nodes);
-                await _repository.AddMany(offers);
-            }
-        }
-
-        protected int GetPagesCount()
-        {
-            var url = _urlGenerator.GeneratePageUrl(CurrentCity, 1);
-            var htmlDoc = HtmlClient.Load(url);
-            HtmlNode pageCount = htmlDoc.DocumentNode.SelectSingleNode("//a[@data-cy='page-link-last']/span");
-            return Convert.ToInt32(pageCount.InnerHtml);
-        }
-        protected List<Offer> GetDetails(List<HtmlNode> nodes)
+        protected override List<Offer> GetDetails(List<HtmlNode> nodes)
         {
             List<Offer> offers = new List<Offer>();
             foreach (var node in nodes)
