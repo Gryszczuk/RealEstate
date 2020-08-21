@@ -30,6 +30,7 @@ namespace RealEstateScrapper.Services.Crawling.Scrappers
         public virtual async Task CollectData(City city)
         {
             CurrentCity = city;
+           await _repository.ClearOffers(CurrentCity, TargetWebsite.Name);
             for (int i = 0; i < await GetPagesCount(); i++)
             {
                 var url = _urlGenerator.GeneratePageUrl(city, i);

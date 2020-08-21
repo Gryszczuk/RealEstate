@@ -22,11 +22,13 @@ namespace RealEstateScrapper.DataAccess
         public async Task Add(T model)
         {
             await entites.AddAsync(model);
+            await _context.SaveChangesAsync();
         }
 
         public async Task AddMany(IEnumerable<T> models)
         {
              await entites.AddRangeAsync(models);
+            await _context.SaveChangesAsync();
         }
 
         public async Task Delete(T model)

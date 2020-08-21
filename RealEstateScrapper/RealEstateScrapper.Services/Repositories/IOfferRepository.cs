@@ -9,7 +9,8 @@ namespace RealEstateScrapper.Services.Repositories
     {
         Task<PagedList<Offer>> GetOffers(City city, QueryArgs args);
         Task<PagedList<Offer>> GetOffers(QueryArgs args);
-        Task<decimal>  GetAveragePriceForCity(City city)
+        Task<decimal> GetAveragePriceForCity(City city);
         Task<int> GetOffersCountForCity(City city);
+        Task ClearOffers(City city, string portal);
     }
 }

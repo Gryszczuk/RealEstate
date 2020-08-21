@@ -50,5 +50,11 @@ namespace RealEstateScrapper.DataAccess.Repositories
             return await _context.Offers.Where(x => x.City == city)
                 .Select(x => x.Price).AverageAsync();
         }
+        public async Task ClearOffers(City city, string portal)
+        {
+            var offers = _context.Offers.Where(x => x.City == city && x.Portal == portal);
+            _context.Offers.RemoveRange(offers);
+            await _context.SaveChangesAsync();
+        }
     }
 }
