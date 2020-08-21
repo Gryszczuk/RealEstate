@@ -4,5 +4,35 @@
     <TargetFramework>netcoreapp3.1</TargetFramework>
   </PropertyGroup>
 
+  <ItemGroup>
+    <PackageReference Include="Autofac" Version="5.2.0" />
+    <PackageReference Include="Autofac.Extensions.DependencyInjection" Version="6.0.0" />
+    <PackageReference Include="AutoMapper" Version="10.0.0" />
+    <PackageReference Include="Hangfire.AspNetCore" Version="1.7.12" />
+    <PackageReference Include="Hangfire.Core" Version="1.7.12" />
+    <PackageReference Include="Hangfire.SqlServer" Version="1.7.12" />
+    <PackageReference Include="MediatR" Version="8.1.0" />
+    <PackageReference Include="MediatR.Extensions.Microsoft.DependencyInjection" Version="8.1.0" />
+    <PackageReference Include="Microsoft.AspNet.WebApi.Core" Version="5.2.7" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.Abstractions" Version="2.2.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="3.1.7">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="3.1.7" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\RealEstateScrapper.DataAccess\RealEstateScrapper.DataAccess.csproj" />
+    <ProjectReference Include="..\RealEstateScrapper.Hangfire\RealEstateScrapper.Hangfire.csproj" />
+    <ProjectReference Include="..\RealEstateScrapper.Models\RealEstateScrapper.Models.csproj" />
+    <ProjectReference Include="..\RealEstateScrapper.Services\RealEstateScrapper.Services.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Offers\Controllers\" />
+    <Folder Include="Offers\Requests\" />
+  </ItemGroup>
+
 
 </Project>

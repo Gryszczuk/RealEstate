@@ -5,6 +5,14 @@ VisualStudioVersion = 16.0.30128.74
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RealEstateScrapper", "RealEstateScrapper\RealEstateScrapper.csproj", "{4F5061AB-6AC3-4D90-8AE1-B2A3DDA94284}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RealEstateScrapper.Services", "RealEstateScrapper.Services\RealEstateScrapper.Services.csproj", "{BCAD91E9-74C2-4154-A983-90498ABD5BC6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RealEstateScrapper.Models", "RealEstateScrapper.Models\RealEstateScrapper.Models.csproj", "{E8CBDC3D-D476-427B-ADB0-8F05DDBD7337}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RealEstateScrapper.DataAccess", "RealEstateScrapper.DataAccess\RealEstateScrapper.DataAccess.csproj", "{ED063B0E-DF8E-4EAA-B5EE-E0652FAB9455}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RealEstateScrapper.Hangfire", "RealEstateScrapper.Hangfire\RealEstateScrapper.Hangfire.csproj", "{659C81A9-B073-4DA1-9536-57294940129B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +23,22 @@ Global
 		{4F5061AB-6AC3-4D90-8AE1-B2A3DDA94284}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4F5061AB-6AC3-4D90-8AE1-B2A3DDA94284}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4F5061AB-6AC3-4D90-8AE1-B2A3DDA94284}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BCAD91E9-74C2-4154-A983-90498ABD5BC6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BCAD91E9-74C2-4154-A983-90498ABD5BC6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BCAD91E9-74C2-4154-A983-90498ABD5BC6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BCAD91E9-74C2-4154-A983-90498ABD5BC6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E8CBDC3D-D476-427B-ADB0-8F05DDBD7337}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E8CBDC3D-D476-427B-ADB0-8F05DDBD7337}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E8CBDC3D-D476-427B-ADB0-8F05DDBD7337}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E8CBDC3D-D476-427B-ADB0-8F05DDBD7337}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ED063B0E-DF8E-4EAA-B5EE-E0652FAB9455}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ED063B0E-DF8E-4EAA-B5EE-E0652FAB9455}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ED063B0E-DF8E-4EAA-B5EE-E0652FAB9455}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ED063B0E-DF8E-4EAA-B5EE-E0652FAB9455}.Release|Any CPU.Build.0 = Release|Any CPU
+		{659C81A9-B073-4DA1-9536-57294940129B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{659C81A9-B073-4DA1-9536-57294940129B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{659C81A9-B073-4DA1-9536-57294940129B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{659C81A9-B073-4DA1-9536-57294940129B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
