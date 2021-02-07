@@ -1,40 +1,38 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\grysz\\Desktop\\RealEstate\\RealEstateScrapper\\RealEstateScrapper\\RealEstateScrapper.csproj": {}
+    "C:\\repospriv\\RealEstate\\RealEstateScrapper\\RealEstateScrapper\\RealEstateScrapper.csproj": {}
   },
   "projects": {
-    "C:\\Users\\grysz\\Desktop\\RealEstate\\RealEstateScrapper\\RealEstateScrapper.DataAccess\\RealEstateScrapper.DataAccess.csproj": {
+    "C:\\repospriv\\RealEstate\\RealEstateScrapper\\RealEstateScrapper.DataAccess\\RealEstateScrapper.DataAccess.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\grysz\\Desktop\\RealEstate\\RealEstateScrapper\\RealEstateScrapper.DataAccess\\RealEstateScrapper.DataAccess.csproj",
+        "projectUniqueName": "C:\\repospriv\\RealEstate\\RealEstateScrapper\\RealEstateScrapper.DataAccess\\RealEstateScrapper.DataAccess.csproj",
         "projectName": "RealEstateScrapper.DataAccess",
-        "projectPath": "C:\\Users\\grysz\\Desktop\\RealEstate\\RealEstateScrapper\\RealEstateScrapper.DataAccess\\RealEstateScrapper.DataAccess.csproj",
-        "packagesPath": "C:\\Users\\grysz\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\grysz\\Desktop\\RealEstate\\RealEstateScrapper\\RealEstateScrapper.DataAccess\\obj\\",
+        "projectPath": "C:\\repospriv\\RealEstate\\RealEstateScrapper\\RealEstateScrapper.DataAccess\\RealEstateScrapper.DataAccess.csproj",
+        "packagesPath": "C:\\Users\\HP\\.nuget\\packages\\",
+        "outputPath": "C:\\repospriv\\RealEstate\\RealEstateScrapper\\RealEstateScrapper.DataAccess\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\grysz\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\HP\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
-          "netcoreapp3.1"
+          "net5.0"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "netcoreapp3.1": {
+          "net5.0": {
+            "targetAlias": "net5.0",
             "projectReferences": {
-              "C:\\Users\\grysz\\Desktop\\RealEstate\\RealEstateScrapper\\RealEstateScrapper.Models\\RealEstateScrapper.Models.csproj": {
-                "projectPath": "C:\\Users\\grysz\\Desktop\\RealEstate\\RealEstateScrapper\\RealEstateScrapper.Models\\RealEstateScrapper.Models.csproj"
+              "C:\\repospriv\\RealEstate\\RealEstateScrapper\\RealEstateScrapper.Models\\RealEstateScrapper.Models.csproj": {
+                "projectPath": "C:\\repospriv\\RealEstate\\RealEstateScrapper\\RealEstateScrapper.Models\\RealEstateScrapper.Models.csproj"
               },
-              "C:\\Users\\grysz\\Desktop\\RealEstate\\RealEstateScrapper\\RealEstateScrapper.Services\\RealEstateScrapper.Services.csproj": {
-                "projectPath": "C:\\Users\\grysz\\Desktop\\RealEstate\\RealEstateScrapper\\RealEstateScrapper.Services\\RealEstateScrapper.Services.csproj"
+              "C:\\repospriv\\RealEstate\\RealEstateScrapper\\RealEstateScrapper.Services\\RealEstateScrapper.Services.csproj": {
+                "projectPath": "C:\\repospriv\\RealEstate\\RealEstateScrapper\\RealEstateScrapper.Services\\RealEstateScrapper.Services.csproj"
               }
             }
           }
@@ -46,27 +44,28 @@
         }
       },
       "frameworks": {
-        "netcoreapp3.1": {
+        "net5.0": {
+          "targetAlias": "net5.0",
           "dependencies": {
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
-              "version": "[3.1.7, )"
+              "version": "[5.0.2, )"
             },
             "Microsoft.EntityFrameworkCore.Design": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
               "target": "Package",
-              "version": "[3.1.7, )"
+              "version": "[5.0.2, )"
             },
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
-              "version": "[3.1.7, )"
+              "version": "[5.0.2, )"
             },
             "Microsoft.EntityFrameworkCore.Tools": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
               "target": "Package",
-              "version": "[3.1.7, )"
+              "version": "[5.0.2, )"
             },
             "Microsoft.Extensions.Configuration": {
               "target": "Package",
@@ -91,41 +90,39 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.300\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.101\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\grysz\\Desktop\\RealEstate\\RealEstateScrapper\\RealEstateScrapper.Hangfire\\RealEstateScrapper.Hangfire.csproj": {
+    "C:\\repospriv\\RealEstate\\RealEstateScrapper\\RealEstateScrapper.Hangfire\\RealEstateScrapper.Hangfire.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\grysz\\Desktop\\RealEstate\\RealEstateScrapper\\RealEstateScrapper.Hangfire\\RealEstateScrapper.Hangfire.csproj",
+        "projectUniqueName": "C:\\repospriv\\RealEstate\\RealEstateScrapper\\RealEstateScrapper.Hangfire\\RealEstateScrapper.Hangfire.csproj",
         "projectName": "RealEstateScrapper.Hangfire",
-        "projectPath": "C:\\Users\\grysz\\Desktop\\RealEstate\\RealEstateScrapper\\RealEstateScrapper.Hangfire\\RealEstateScrapper.Hangfire.csproj",
-        "packagesPath": "C:\\Users\\grysz\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\grysz\\Desktop\\RealEstate\\RealEstateScrapper\\RealEstateScrapper.Hangfire\\obj\\",
+        "projectPath": "C:\\repospriv\\RealEstate\\RealEstateScrapper\\RealEstateScrapper.Hangfire\\RealEstateScrapper.Hangfire.csproj",
+        "packagesPath": "C:\\Users\\HP\\.nuget\\packages\\",
+        "outputPath": "C:\\repospriv\\RealEstate\\RealEstateScrapper\\RealEstateScrapper.Hangfire\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\grysz\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\HP\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
-          "netcoreapp3.1"
+          "net5.0"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "netcoreapp3.1": {
+          "net5.0": {
+            "targetAlias": "net5.0",
             "projectReferences": {
-              "C:\\Users\\grysz\\Desktop\\RealEstate\\RealEstateScrapper\\RealEstateScrapper.DataAccess\\RealEstateScrapper.DataAccess.csproj": {
-                "projectPath": "C:\\Users\\grysz\\Desktop\\RealEstate\\RealEstateScrapper\\RealEstateScrapper.DataAccess\\RealEstateScrapper.DataAccess.csproj"
+              "C:\\repospriv\\RealEstate\\RealEstateScrapper\\RealEstateScrapper.DataAccess\\RealEstateScrapper.DataAccess.csproj": {
+                "projectPath": "C:\\repospriv\\RealEstate\\RealEstateScrapper\\RealEstateScrapper.DataAccess\\RealEstateScrapper.DataAccess.csproj"
               },
-              "C:\\Users\\grysz\\Desktop\\RealEstate\\RealEstateScrapper\\RealEstateScrapper.Services\\RealEstateScrapper.Services.csproj": {
-                "projectPath": "C:\\Users\\grysz\\Desktop\\RealEstate\\RealEstateScrapper\\RealEstateScrapper.Services\\RealEstateScrapper.Services.csproj"
+              "C:\\repospriv\\RealEstate\\RealEstateScrapper\\RealEstateScrapper.Services\\RealEstateScrapper.Services.csproj": {
+                "projectPath": "C:\\repospriv\\RealEstate\\RealEstateScrapper\\RealEstateScrapper.Services\\RealEstateScrapper.Services.csproj"
               }
             }
           }
@@ -137,7 +134,8 @@
         }
       },
       "frameworks": {
-        "netcoreapp3.1": {
+        "net5.0": {
+          "targetAlias": "net5.0",
           "dependencies": {
             "Hangfire.Core": {
               "target": "Package",
@@ -166,35 +164,33 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.300\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.101\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\grysz\\Desktop\\RealEstate\\RealEstateScrapper\\RealEstateScrapper.Models\\RealEstateScrapper.Models.csproj": {
+    "C:\\repospriv\\RealEstate\\RealEstateScrapper\\RealEstateScrapper.Models\\RealEstateScrapper.Models.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\grysz\\Desktop\\RealEstate\\RealEstateScrapper\\RealEstateScrapper.Models\\RealEstateScrapper.Models.csproj",
+        "projectUniqueName": "C:\\repospriv\\RealEstate\\RealEstateScrapper\\RealEstateScrapper.Models\\RealEstateScrapper.Models.csproj",
         "projectName": "RealEstateScrapper.Models",
-        "projectPath": "C:\\Users\\grysz\\Desktop\\RealEstate\\RealEstateScrapper\\RealEstateScrapper.Models\\RealEstateScrapper.Models.csproj",
-        "packagesPath": "C:\\Users\\grysz\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\grysz\\Desktop\\RealEstate\\RealEstateScrapper\\RealEstateScrapper.Models\\obj\\",
+        "projectPath": "C:\\repospriv\\RealEstate\\RealEstateScrapper\\RealEstateScrapper.Models\\RealEstateScrapper.Models.csproj",
+        "packagesPath": "C:\\Users\\HP\\.nuget\\packages\\",
+        "outputPath": "C:\\repospriv\\RealEstate\\RealEstateScrapper\\RealEstateScrapper.Models\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\grysz\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\HP\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
-          "netcoreapp3.1"
+          "net5.0"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "netcoreapp3.1": {
+          "net5.0": {
+            "targetAlias": "net5.0",
             "projectReferences": {}
           }
         },
@@ -205,11 +201,12 @@
         }
       },
       "frameworks": {
-        "netcoreapp3.1": {
+        "net5.0": {
+          "targetAlias": "net5.0",
           "dependencies": {
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
-              "version": "[3.1.7, )"
+              "version": "[5.0.2, )"
             }
           },
           "imports": [
@@ -227,38 +224,36 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.300\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.101\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\grysz\\Desktop\\RealEstate\\RealEstateScrapper\\RealEstateScrapper.Services\\RealEstateScrapper.Services.csproj": {
+    "C:\\repospriv\\RealEstate\\RealEstateScrapper\\RealEstateScrapper.Services\\RealEstateScrapper.Services.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\grysz\\Desktop\\RealEstate\\RealEstateScrapper\\RealEstateScrapper.Services\\RealEstateScrapper.Services.csproj",
+        "projectUniqueName": "C:\\repospriv\\RealEstate\\RealEstateScrapper\\RealEstateScrapper.Services\\RealEstateScrapper.Services.csproj",
         "projectName": "RealEstateScrapper.Services",
-        "projectPath": "C:\\Users\\grysz\\Desktop\\RealEstate\\RealEstateScrapper\\RealEstateScrapper.Services\\RealEstateScrapper.Services.csproj",
-        "packagesPath": "C:\\Users\\grysz\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\grysz\\Desktop\\RealEstate\\RealEstateScrapper\\RealEstateScrapper.Services\\obj\\",
+        "projectPath": "C:\\repospriv\\RealEstate\\RealEstateScrapper\\RealEstateScrapper.Services\\RealEstateScrapper.Services.csproj",
+        "packagesPath": "C:\\Users\\HP\\.nuget\\packages\\",
+        "outputPath": "C:\\repospriv\\RealEstate\\RealEstateScrapper\\RealEstateScrapper.Services\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\grysz\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\HP\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
-          "netcoreapp3.1"
+          "net5.0"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "netcoreapp3.1": {
+          "net5.0": {
+            "targetAlias": "net5.0",
             "projectReferences": {
-              "C:\\Users\\grysz\\Desktop\\RealEstate\\RealEstateScrapper\\RealEstateScrapper.Models\\RealEstateScrapper.Models.csproj": {
-                "projectPath": "C:\\Users\\grysz\\Desktop\\RealEstate\\RealEstateScrapper\\RealEstateScrapper.Models\\RealEstateScrapper.Models.csproj"
+              "C:\\repospriv\\RealEstate\\RealEstateScrapper\\RealEstateScrapper.Models\\RealEstateScrapper.Models.csproj": {
+                "projectPath": "C:\\repospriv\\RealEstate\\RealEstateScrapper\\RealEstateScrapper.Models\\RealEstateScrapper.Models.csproj"
               }
             }
           }
@@ -270,7 +265,8 @@
         }
       },
       "frameworks": {
-        "netcoreapp3.1": {
+        "net5.0": {
+          "targetAlias": "net5.0",
           "dependencies": {
             "AutoMapper": {
               "target": "Package",
@@ -315,47 +311,45 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.300\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.101\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\grysz\\Desktop\\RealEstate\\RealEstateScrapper\\RealEstateScrapper\\RealEstateScrapper.csproj": {
+    "C:\\repospriv\\RealEstate\\RealEstateScrapper\\RealEstateScrapper\\RealEstateScrapper.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\grysz\\Desktop\\RealEstate\\RealEstateScrapper\\RealEstateScrapper\\RealEstateScrapper.csproj",
+        "projectUniqueName": "C:\\repospriv\\RealEstate\\RealEstateScrapper\\RealEstateScrapper\\RealEstateScrapper.csproj",
         "projectName": "RealEstateScrapper",
-        "projectPath": "C:\\Users\\grysz\\Desktop\\RealEstate\\RealEstateScrapper\\RealEstateScrapper\\RealEstateScrapper.csproj",
-        "packagesPath": "C:\\Users\\grysz\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\grysz\\Desktop\\RealEstate\\RealEstateScrapper\\RealEstateScrapper\\obj\\",
+        "projectPath": "C:\\repospriv\\RealEstate\\RealEstateScrapper\\RealEstateScrapper\\RealEstateScrapper.csproj",
+        "packagesPath": "C:\\Users\\HP\\.nuget\\packages\\",
+        "outputPath": "C:\\repospriv\\RealEstate\\RealEstateScrapper\\RealEstateScrapper\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\grysz\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\HP\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
-          "netcoreapp3.1"
+          "net5.0"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "netcoreapp3.1": {
+          "net5.0": {
+            "targetAlias": "net5.0",
             "projectReferences": {
-              "C:\\Users\\grysz\\Desktop\\RealEstate\\RealEstateScrapper\\RealEstateScrapper.DataAccess\\RealEstateScrapper.DataAccess.csproj": {
-                "projectPath": "C:\\Users\\grysz\\Desktop\\RealEstate\\RealEstateScrapper\\RealEstateScrapper.DataAccess\\RealEstateScrapper.DataAccess.csproj"
+              "C:\\repospriv\\RealEstate\\RealEstateScrapper\\RealEstateScrapper.DataAccess\\RealEstateScrapper.DataAccess.csproj": {
+                "projectPath": "C:\\repospriv\\RealEstate\\RealEstateScrapper\\RealEstateScrapper.DataAccess\\RealEstateScrapper.DataAccess.csproj"
               },
-              "C:\\Users\\grysz\\Desktop\\RealEstate\\RealEstateScrapper\\RealEstateScrapper.Hangfire\\RealEstateScrapper.Hangfire.csproj": {
-                "projectPath": "C:\\Users\\grysz\\Desktop\\RealEstate\\RealEstateScrapper\\RealEstateScrapper.Hangfire\\RealEstateScrapper.Hangfire.csproj"
+              "C:\\repospriv\\RealEstate\\RealEstateScrapper\\RealEstateScrapper.Hangfire\\RealEstateScrapper.Hangfire.csproj": {
+                "projectPath": "C:\\repospriv\\RealEstate\\RealEstateScrapper\\RealEstateScrapper.Hangfire\\RealEstateScrapper.Hangfire.csproj"
               },
-              "C:\\Users\\grysz\\Desktop\\RealEstate\\RealEstateScrapper\\RealEstateScrapper.Models\\RealEstateScrapper.Models.csproj": {
-                "projectPath": "C:\\Users\\grysz\\Desktop\\RealEstate\\RealEstateScrapper\\RealEstateScrapper.Models\\RealEstateScrapper.Models.csproj"
+              "C:\\repospriv\\RealEstate\\RealEstateScrapper\\RealEstateScrapper.Models\\RealEstateScrapper.Models.csproj": {
+                "projectPath": "C:\\repospriv\\RealEstate\\RealEstateScrapper\\RealEstateScrapper.Models\\RealEstateScrapper.Models.csproj"
               },
-              "C:\\Users\\grysz\\Desktop\\RealEstate\\RealEstateScrapper\\RealEstateScrapper.Services\\RealEstateScrapper.Services.csproj": {
-                "projectPath": "C:\\Users\\grysz\\Desktop\\RealEstate\\RealEstateScrapper\\RealEstateScrapper.Services\\RealEstateScrapper.Services.csproj"
+              "C:\\repospriv\\RealEstate\\RealEstateScrapper\\RealEstateScrapper.Services\\RealEstateScrapper.Services.csproj": {
+                "projectPath": "C:\\repospriv\\RealEstate\\RealEstateScrapper\\RealEstateScrapper.Services\\RealEstateScrapper.Services.csproj"
               }
             }
           }
@@ -367,7 +361,8 @@
         }
       },
       "frameworks": {
-        "netcoreapp3.1": {
+        "net5.0": {
+          "targetAlias": "net5.0",
           "dependencies": {
             "AutoMapper": {
               "target": "Package",
@@ -413,11 +408,11 @@
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
               "target": "Package",
-              "version": "[3.1.7, )"
+              "version": "[5.0.2, )"
             },
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
-              "version": "[3.1.7, )"
+              "version": "[5.0.2, )"
             }
           },
           "imports": [
@@ -438,7 +433,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.300\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.101\\RuntimeIdentifierGraph.json"
         }
       }
     }
